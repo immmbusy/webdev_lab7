@@ -1,0 +1,75 @@
+/* Basic reset to remove default margins and padding */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main title styling */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2b2d42;
+  margin-bottom: 30px;
+}
+
+/* Table styles */
+#planets {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table headers */
+#planets th {
+  background-color: #8d99ae;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+/* Table data cells */
+#planets td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+/* Alternate row background colors */
+#planets tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+/* Image styling */
+.planet-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* Ensures images fit within the dimensions while preserving aspect ratio */
+  border-radius: 8px;
+  border: 2px solid #8d99ae;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive table design */
+@media (max-width: 768px) {
+  #planets {
+    width: 100%;
+  }
+  
+  .planet-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  th, td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
